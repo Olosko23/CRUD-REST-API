@@ -22,13 +22,13 @@ mongoose.connect('mongodb+srv://olosko:olosko@rest2.etodvum.mongodb.net/?retryWr
 })
 
 
-//test routes
+//test route
 app.get("/", (req,res) =>{
     res.json("Hello There Welcome to the API");
 });
 
 
-//actual routes-----Create a Product
+//Create a Product
 app.post('/products', async(req, res) => {
     try {
         const product = await Product.create(req.body)
