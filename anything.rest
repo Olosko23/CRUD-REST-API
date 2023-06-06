@@ -1,0 +1,35 @@
+
+GET http://localhost:3000
+
+###
+POST http://localhost:3000/products
+content-type: application/json
+
+{
+    "name" : "Fubo TV",
+    "quantity" : "100",
+    "price" : "2005",
+    "img" : "https:google.com/duck.img"
+}
+
+###
+
+GET http://localhost:3000/products
+
+###
+
+DELETE http://localhost:3000/products/647f413817f3749ad68102a9
+
+###
+
+GET  http://localhost:3000/products/647f447470f95d11625d0064
+
+###
+PATCH http://localhost:3000/products/647f447470f95d11625d0064
+content-type: application/json
+
+{
+    "name": "Fubo Network"
+}
+
+
